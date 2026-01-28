@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abrir Empresa — Agix Consultoria Contábil</title>
+    <meta name="description"
+        content="Abra sua empresa com a Agix: 100% online, orientação de regime/CNAE e acompanhamento do processo até o CNPJ." />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="abrir-empresa.css" />
+
+    <script>
+        // Apply theme immediately to prevent flickering
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        if (currentTheme === 'light') {
+            document.body.classList.add('light-mode');
+        }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="brand">
+                <img src="/assets/logo.png" alt="Agix Consultoria Contábil" class="logo">
+            </a>
+            <nav class="nav">
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Serviços</a>
+                    <div class="dropdown-content">
+                        <a href="abrir-empresa.html">Abrir empresa</a>
+                    </div>
+                </div>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#contato">Contato</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Recursos</a>
+                    <div class="dropdown-content">
+                        <a href="calculator.html">Calculadora CLT x PJ</a>
+                    </div>
+                </div>
+            </nav>
+
+            <button id="theme-toggle" type="button" class="btn theme-toggle-btn" aria-label="Alternar tema">🌙</button>
+
+            <a class="btn btn-primary" href="https://wa.me/55SEUNUMEROAQUI" target="_blank">
+                Falar no WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero hero-abrir">
+        <div class="container hero-split">
+            <div>
+                <h1>Abertura de empresa online, rápida e sem burocracia.</h1>
+                <p>
+                    Abra seu CNPJ com orientação completa: melhor regime tributário, CNAE/atividades e passo a passo
+                    claro.
+                    A Agix cuida da burocracia e te atualiza em cada etapa.
+                </p>
+
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" href="#form-lead">Quero abrir minha empresa</a>
+                    <a class="btn btn-secondary" href="#como-funciona">Ver como funciona</a>
+                </div>
+
+                <div class="hero-tags">
+                    <span>100% online</span>
+                    <span>Orientação de CNAE e regime</span>
+                    <span>Acompanhamento do processo</span>
+                </div>
+            </div>
+
+            <aside class="hero-box">
+                <h3>Comece por aqui</h3>
+                <ul>
+                    <li>Você informa seu tipo de negócio</li>
+                    <li>A Agix sugere CNAE e regime</li>
+                    <li>Checklist de documentos</li>
+                    <li>Abertura + orientação de rotina</li>
+                </ul>
+                <a class="btn btn-primary btn-block"
+                    href="https://wa.me/55SEUNUMEROAQUI?text=Oi!%20Quero%20abrir%20minha%20empresa%20com%20a%20Agix."
+                    target="_blank" rel="noreferrer">
+                    Falar com especialista
+                </a>
+                <small class="mini-note">Tempo e etapas variam conforme cidade/atividade e órgãos locais.</small>
+            </aside>
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="section">
+        <div class="container">
+            <h2>Por que abrir sua empresa com a Agix?</h2>
+            <p class="section-sub">Processo simples, suporte humano e orientação para você começar do jeito certo.</p>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>100% online</h3>
+                    <p>Você faz tudo de forma prática, sem precisar sair de casa.</p>
+                </div>
+                <div class="card">
+                    <h3>Suporte especializado</h3>
+                    <p>Ajudamos a definir regime tributário e CNAE/atividades conforme seu negócio.</p>
+                </div>
+                <div class="card">
+                    <h3>Atendimento nacional</h3>
+                    <p>Atendimento digital para você abrir sua empresa em qualquer estado do Brasil.</p>
+                </div>
+                <div class="card">
+                    <h3>Praticidade</h3>
+                    <p>Rotina organizada: checklist, prazos e acompanhamento do que falta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NÚMEROS (placeholders) -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="stats">
+                <div class="stat">
+                    <b>+6 anos</b>
+                    <span>de experiência</span>
+                </div>
+                <div class="stat">
+                    <b>+50 clientes</b>
+                    <span>atendidos</span>
+                </div>
+                <div class="stat">
+                    <b>+100 aberturas</b>
+                    <span>realizadas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA (1–2–3) -->
+    <section id="como-funciona" class="section">
+        <div class="container">
+            <h2>Passo a passo da abertura</h2>
+            <p class="section-sub">Três etapas simples — a Agix assume a burocracia e te mantém informado.</p>
+
+            <div class="steps">
+                <div class="step card">
+                    <span class="step-num">1</span>
+                    <h3>Consultoria inicial</h3>
+                    <p>Entendemos seu cenário e indicamos CNAE/atividades e regime tributário mais adequado.</p>
+                </div>
+
+                <div class="step card">
+                    <span class="step-num">2</span>
+                    <h3>Registro e documentação</h3>
+                    <p>Checklist, coleta de dados e início do processo de registro (conforme exigências locais).</p>
+                </div>
+
+                <div class="step card">
+                    <span class="step-num">3</span>
+                    <h3>CNPJ e próximos passos</h3>
+                    <p>Com o CNPJ pronto, orientamos sua rotina inicial: notas, prazos e organização.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER “onde você estiver…” -->
+    <section class="section">
+        <div class="container">
+            <div class="banner">
+                <div>
+                    <h3>Onde você estiver, sua contabilidade estará com você.</h3>
+                    <p>Atendimento 100% online, com processos claros e suporte humano para acompanhar sua jornada.</p>
+                </div>
+                <a class="btn btn-primary" href="#form-lead">Quero abrir agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM / LEAD (simples) -->
+    <section id="form-lead" class="section section-dark">
+        <div class="container">
+            <h2>Fale com a Agix para abrir sua empresa</h2>
+            <p class="section-sub">Preencha e a equipe retorna com checklist e proposta.</p>
+
+            <form class="lead-form card" onsubmit="return false;">
+                <div class="two-col">
+                    <div class="field">
+                        <label>Nome</label>
+                        <input type="text" placeholder="Seu nome" />
+                    </div>
+                    <div class="field">
+                        <label>WhatsApp</label>
+                        <input type="text" placeholder="(DD) 9xxxx-xxxx" />
+                    </div>
+                </div>
+
+                <div class="two-col">
+                    <div class="field">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="seuemail@exemplo.com" />
+                    </div>
+                    <div class="field">
+                        <label>Estado / Cidade</label>
+                        <input type="text" placeholder="Ex.: CE / Fortaleza" />
+                    </div>
+                </div>
+
+                <div class="two-col">
+                    <div class="field">
+                        <label>Tipo de negócio</label>
+                        <select>
+                            <option value="">Selecione</option>
+                            <option>Prestação de serviço</option>
+                            <option>Comércio</option>
+                            <option>Comércio e serviço</option>
+                            <option>Profissional liberal</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Você é MEI hoje?</label>
+                        <select>
+                            <option value="">Selecione</option>
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Mensagem (opcional)</label>
+                    <textarea rows="4"
+                        placeholder="Conte rapidamente o que você faz e se já tem um endereço para a empresa."></textarea>
+                </div>
+
+                <!-- Para MVP: botão leva pro WhatsApp (sem backend) -->
+                <a class="btn btn-primary btn-block"
+                    href="https://wa.me/55SEUNUMEROAQUI?text=Oi!%20Quero%20abrir%20minha%20empresa%20com%20a%20Agix.%20Meu%20neg%C3%B3cio%20%C3%A9%20..."
+                    target="_blank" rel="noreferrer">
+                    Enviar no WhatsApp
+                </a>
+
+                <p class="fine-print">
+                    Simulação de formulário para apresentação. Para captura real de leads, conectamos a um serviço
+                    (Forms/Netlify Forms) depois.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-row">
+            <p>© <span id="year"></span> Agix Consultoria Contábil</p>
+            <a href="https://www.instagram.com/agixconsultoria/" target="_blank" rel="noreferrer">@agixconsultoria</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        if (themeToggle) {
+            // Set initial button text based on current theme
+            const currentTheme = localStorage.getItem('theme') || 'dark';
+            themeToggle.textContent = currentTheme === 'light' ? '☀️' : '🌙';
+
+            // Toggle theme on button click
+            themeToggle.addEventListener('click', () => {
+                themeToggle.textContent = 'clicked';
+                const isLight = body.classList.contains('light-mode');
+                if (isLight) {
+                    body.classList.remove('light-mode');
+                    themeToggle.textContent = '🌙';
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    body.classList.add('light-mode');
+                    themeToggle.textContent = '☀️';
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agix Consultoria Contábil</title>
+    <meta name="description" content="Agix Consultoria Contábil – contabilidade clara, organizada e sem burocracia.">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        // Apply theme immediately to prevent flickering
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        if (currentTheme === 'light') {
+            document.body.classList.add('light-mode');
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="brand">
+                <img src="/assets/logo.png" alt="Agix Consultoria Contábil" class="logo">
+            </a>
+            <nav class="nav">
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Serviços</a>
+                    <div class="dropdown-content">
+                        <a href="abrir-empresa.html">Abrir empresa</a>
+                    </div>
+                </div>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#contato">Contato</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Recursos</a>
+                    <div class="dropdown-content">
+                        <a href="calculator.html">Calculadora CLT x PJ</a>
+                    </div>
+                </div>
+            </nav>
+
+            <button id="theme-toggle" type="button" class="btn theme-toggle-btn" aria-label="Alternar tema">🌙</button>
+
+            <a class="btn btn-primary" href="https://wa.me/55SEUNUMEROAQUI" target="_blank">
+                Falar no WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Contabilidade clara, organizada e sem burocracia.</h1>
+
+            <p>
+                A Agix cuida das rotinas contábeis e fiscais com atendimento ágil e processos simples,
+                pra você focar no crescimento do seu negócio.
+            </p>
+
+            <div class="hero-buttons">
+                <a class="btn btn-primary" href="https://wa.me/55SEUNUMEROAQUI" target="_blank">
+                    Solicitar proposta
+                </a>
+
+                <a class="btn btn-secondary" href="https://www.instagram.com/agixconsultoria/" target="_blank">
+                    Ver Instagram
+                </a>
+            </div>
+
+            <div class="hero-tags">
+                <span>Atendimento humanizado</span>
+                <span>Rotina organizada</span>
+                <span>MEI e Simples Nacional</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section offset">
+        <div class="container">
+            <h2>Serviços</h2>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>Abertura e alterações</h3>
+                    <p>Orientação completa para enquadramento, documentação e processos.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Contabilidade mensal</h3>
+                    <p>Apuração, obrigações fiscais e acompanhamento da rotina.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Folha de pagamento</h3>
+                    <p>Admissões, rescisões, encargos e suporte.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Regularização</h3>
+                    <p>Pendências, parcelamentos e ajustes para manter tudo em dia.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Notas fiscais</h3>
+                    <p>Orientação simples para emissão e organização das NFs.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Suporte ágil</h3>
+                    <p>Atendimento direto com clareza de prazos e próximos passos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" class="section section-dark offset">
+        <div class="container">
+            <h2>Como funciona</h2>
+
+            <div class="steps">
+                <div class="step">
+                    <span>1</span>
+                    <p>Você chama no WhatsApp e explica seu cenário.</p>
+                </div>
+
+                <div class="step">
+                    <span>2</span>
+                    <p>Recebe checklist e proposta personalizada.</p>
+                </div>
+
+                <div class="step">
+                    <span>3</span>
+                    <p>Rotina mensal organizada com acompanhamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+        <div class="container contact">
+            <h2>Quer uma proposta hoje?</h2>
+            <p>
+                Chame no WhatsApp e informe: tipo de empresa, cidade e faturamento aproximado.
+            </p>
+
+            <a class="btn btn-primary" href="https://wa.me/55SEUNUMEROAQUI" target="_blank">
+                Falar no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section offset">
+        <div class="container">
+            <h2>Contato</h2>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>WhatsApp</h3>
+                    <p>Atendimento rápido e direto</p>
+                    <a class="btn btn-primary" href="https://wa.me/55SEUNUMEROAQUI" target="_blank">
+                        Falar no WhatsApp
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>contabilidade@agixconsultoria.com</p>
+                    <a class="btn btn-primary" href="mailto:contabilidade@agixconsultoria.com">
+                        Enviar email
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Endereço</h3>
+                    <p>Rua da Assunção, 1274 - José Bonifácio<br>Fortaleza - Ceará</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="year"></span> Agix Consultoria Contábil</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        if (themeToggle) {
+            // Set initial button text based on current theme
+            const currentTheme = localStorage.getItem('theme') || 'dark';
+            themeToggle.textContent = currentTheme === 'light' ? '☀️' : '🌙';
+
+            // Toggle theme on button click
+            themeToggle.addEventListener('click', () => {
+                themeToggle.textContent = 'clicked';
+                const isLight = body.classList.contains('light-mode');
+                if (isLight) {
+                    body.classList.remove('light-mode');
+                    themeToggle.textContent = '🌙';
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    body.classList.add('light-mode');
+                    themeToggle.textContent = '☀️';
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
