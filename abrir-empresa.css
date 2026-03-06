@@ -13,7 +13,7 @@
 }
 
 /* Light mode */
-body.light-mode {
+html.light-mode {
     --bg: #f8f9fa;
     --surface: #ffffff;
     --stroke: #e9ecef;
@@ -24,18 +24,18 @@ body.light-mode {
     --shadow: 0 16px 40px rgba(0, 0, 0, .1);
 }
 
-body.light-mode {
+html.light-mode body {
     background:
         radial-gradient(900px 500px at 75% 10%, rgba(202, 160, 42, .08), transparent 60%),
         radial-gradient(900px 500px at 20% 0%, rgba(0, 0, 0, .02), transparent 55%),
         var(--bg);
 }
 
-body.light-mode .header {
+html.light-mode .header {
     background: rgba(255, 255, 255, 0.9);
 }
 
-body.light-mode input {
+html.light-mode input {
     background: rgba(0, 0, 0, .02);
 }
 

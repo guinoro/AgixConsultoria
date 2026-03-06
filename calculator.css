@@ -8,11 +8,11 @@
     --gold-dark: #9b7a1d;
     --radius: 18px;
     --shadow: 0 16px 40px rgba(0, 0, 0, .55);
-    --max: 1100px;
+    --max: 1250px;
 }
 
 /* Light mode */
-body.light-mode {
+html.light-mode {
     --bg: #f8f9fa;
     --surface: #ffffff;
     --stroke: #e9ecef;
@@ -23,18 +23,18 @@ body.light-mode {
     --shadow: 0 16px 40px rgba(0, 0, 0, .1);
 }
 
-body.light-mode {
+html.light-mode body {
     background:
         radial-gradient(900px 500px at 75% 10%, rgba(202, 160, 42, .08), transparent 60%),
         radial-gradient(900px 500px at 20% 0%, rgba(0, 0, 0, .02), transparent 55%),
         var(--bg);
 }
 
-body.light-mode .header {
+html.light-mode .header {
     background: rgba(255, 255, 255, 0.9);
 }
 
-body.light-mode input {
+html.light-mode input {
     background: rgba(0, 0, 0, .02);
 }
 
@@ -90,8 +90,13 @@ a {
     align-items: center
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 .nav a {
-    margin-right: 20px;
+    margin-right: 15px;
     color: var(--muted);
     text-decoration: none;
     font-weight: 600;
@@ -104,7 +109,7 @@ a {
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .dropbtn {
@@ -244,6 +249,7 @@ h1 {
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     padding: 18px;
+    color: rgba(255, 255, 255, 0.85); /* Fix dark text inside cards in light mode */
 }
 
 h2 {
@@ -311,6 +317,7 @@ small {
 .disclaimer {
     margin: 12px 0 0;
     font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .empty {
@@ -332,15 +339,16 @@ small {
 }
 
 .result-row span {
-    color: var(--text)
+    color: inherit;
 }
 
 .result-row b {
-    font-size: 16px
+    font-size: 16px;
+    color: #ffffff;
 }
 
 .result-row.subtle span {
-    color: var(--text)
+    color: rgba(255, 255, 255, 0.65);
 }
 
 .result-row.subtle b {
@@ -401,4 +409,33 @@ small {
     .logo {
         width: 120px
     }
+}
+
+/* FLUTUANTE WPP  */
+.floating-wa {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.floating-wa:hover {
+    transform: scale(1.1);
+    background-color: #1ebe57;
+}
+
+.floating-wa svg {
+    width: 35px;
+    height: 35px;
 }
